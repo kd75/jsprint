@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    print test<br />
-    A4 document
     <ReportEditor />
   </div>
 </template>

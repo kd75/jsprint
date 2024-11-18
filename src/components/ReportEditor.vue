@@ -1,6 +1,9 @@
 <template>
   <div>
     <div>
+      <button @click="addText">テキストを追加</button>
+    </div>
+    <div>
       <label for="font-select">フォントを選択:</label>
       <select id="font-select" v-model="selectedFont" @change="applyFont">
         <option v-for="font in availableFonts" :key="font" :value="font">{{ font }}</option>
@@ -60,7 +63,6 @@
         <button class="remove-button" @click="removeElement(index)">削除</button>
       </vue-draggable-resizable>
     </div>
-    <button @click="addText">テキストを追加</button>
     <button @click="generatePDF">PDFを生成</button>
     <button @click="printCustom">プレビューと印刷</button>
   </div>
